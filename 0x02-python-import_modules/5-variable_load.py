@@ -3,4 +3,5 @@ if __name__ == "__main__":
     """Print all names from hidden_4"""
     import variable_load_5
 
-    return (variable_load_5.a)
+    temp = variable_load_5.a
+    print(temp)

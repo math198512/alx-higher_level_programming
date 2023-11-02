@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    """Do some math with numbers 5 and 10 then prints the result."""
+    """Print some math calculations using 10 and 5"""
     from calculator_1 import add, sub, mul, div
 
     a = 10

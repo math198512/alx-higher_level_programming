@@ -2,6 +2,7 @@
 def calcSquare(n):
     return n*n
 
+
 def square_matrix_simple(matrix=[]):
     if not matrix:
         return None

@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""Square class that does nothing"""
+"""class Square that defines a square"""
 
 
 class Square():
+    """square class with it's size and proper validation"""
+
     def __init__(self, size=0):
         self.__size = size
 
@@ -17,6 +19,7 @@ class Square():
         elif (value < 0):
             raise ValueError("size must be >= 0")
         self.__size = value
+
     def area(self):
 
         return (self.__size * self.__size)

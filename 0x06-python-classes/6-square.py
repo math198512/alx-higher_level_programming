@@ -25,7 +25,7 @@ class Square():
     def position(self):
         return self.__position
 
-    @size.setter
+    @property.setter
     def position(self, value):
         if (type(value) is not tuple):
             raise TypeError("position must be a tuple of two \

@@ -1,5 +1,15 @@
 #!/usr/bin/python3
+"""
+This function, matrix_divided,
+divides all elements of a matrix by a given number.
+"""
+
+
 def matrix_divided(matrix, div):
+    """Returns a new matrix with elements divided by div,
+    rounded to 2 decimal places
+    """
+
     errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix:
         raise TypeError(errorMessage)

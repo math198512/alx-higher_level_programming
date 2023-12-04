@@ -112,3 +112,8 @@ integer_validator method tuple:
     >>> bg.integer_validator("Foo", (1, 2))
     Traceback (most recent call last):
     TypeError: Foo must be an integer
+
+integer_validator method dic:
+    >>> bg.integer_validator("Foo", {1, 2})
+    Traceback (most recent call last):
+    TypeError: Foo must be an integer

@@ -2,6 +2,7 @@
 
 """Defines a function to check the subclasses of an object."""
 
+
 def inherits_from(obj, a_class):
     """Check if an object is an instance of the subclasses of a given class.
 
@@ -12,7 +13,7 @@ def inherits_from(obj, a_class):
         If obj is an instance of the subclasses of a_class - True.
         Otherwise - False.
     """
-    
-    if (type(obj) != a_class):
+
+    if (type(obj) is a_class):
         return (issubclass(type(obj), a_class))
     return (False)

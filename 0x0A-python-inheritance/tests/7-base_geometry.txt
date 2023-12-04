@@ -1,16 +1,17 @@
 The ``7-base_geometry`` module
 ============================
 
-Using ``7-base_geometry``
+Using ``BaseGeometry``
 ---------------------
 
-Import class from module:
+Import function from module:
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 Correct Class Type test:
-    >>> bg = Basegeometry()
+    >>> bg = BaseGeometry()
     >>> type(bg) == BaseGeometry
     True
+
 
 area() instance method
 ----------------------

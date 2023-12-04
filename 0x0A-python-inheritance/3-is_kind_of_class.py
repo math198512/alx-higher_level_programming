@@ -2,6 +2,7 @@
 
 """Defines a function to check the class(or parent) of an object."""
 
+
 def is_kind_of_class(obj, a_class):
     """Check if an object is an instance of a given class or its parent.
 

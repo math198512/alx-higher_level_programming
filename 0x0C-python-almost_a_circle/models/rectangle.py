@@ -13,6 +13,11 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    def __str__(self):
+        '''Returns string representation of this rectangle.'''
+        return ("[Rectangle] (" + str(self.id)+") "+str(self.__x)+"/" +
+                str(self.__y)+" - "+str(self.__width)+"/"+str(self.__height))
+
     @property
     def width(self):
         """Get the width of the Rectangle."""
@@ -68,3 +73,18 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """ returns the area of the rectangle object """
+        return self.__width * self.__height
+
+    def display(self):
+        """ displays a rectangle """
+        for i in range(self.__y):
+            print()
+        for i in range(self.__height):
+            for i in range(self.__x):
+                print(" ", end="")
+            for i in range(self.__width):
+                print("#", end="")
+            print()

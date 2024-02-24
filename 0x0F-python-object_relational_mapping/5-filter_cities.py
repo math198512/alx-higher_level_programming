@@ -18,5 +18,5 @@ if __name__ == "__main__":
                 ON cities.state_id = states.id
                 ORDER BY cities.id""")
     print(", ".join([city[2]
-                     for city in c.fetchall()
+                     for city in cursor.fetchall()
                      if city[4] == sys.argv[4]]))

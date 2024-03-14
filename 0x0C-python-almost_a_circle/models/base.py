@@ -40,3 +40,10 @@ class Base:
 
         with open(file, 'w') as f:
             f.write(lists)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ returns the list of dict represented by json_string """
+        if not json_string:
+            return []
+        return json.loads(json_string)

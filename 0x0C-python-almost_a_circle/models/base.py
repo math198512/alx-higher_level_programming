@@ -63,7 +63,7 @@ class Base:
         """ Returns a list of instances """
         file = "{}.json".format(cls.__name__)
 
-        if os.path.exists(filename) is False:
+        if os.path.exists(file) is False:
             return []
 
         with open(file, 'r') as f:

@@ -3,6 +3,7 @@
 import json
 import os.path
 
+
 class Base:
     """ Class Base """
     __nb_objects = 0
@@ -39,4 +40,3 @@ class Base:
 
         with open(file, 'w') as f:
             f.write(lists)
-

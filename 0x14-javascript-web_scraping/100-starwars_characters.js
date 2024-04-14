@@ -9,6 +9,16 @@ request('https://swapi-api.alx-tools.com/api/films/' + movieId, function (error,
   } else {
     const obj = JSON.parse(body);
     const characters = obj.characters;
-    console.log(characters);
+    for (let i = 0; i < characters.length; i++) {
+      request(characters[i], function (error, response, body) {
+        if (error) {
+          console.error(error);
+        } else {
+          const character = JSON.parse(body);
+          const name = character.name;
+          console.log(name);
+        }
+      });
+    }
   }
 });

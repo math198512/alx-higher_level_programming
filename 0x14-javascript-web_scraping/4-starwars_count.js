@@ -8,11 +8,18 @@ request(url, function (error, response, body) {
     console.error(error); // Print the error if one occurred
   } else {
     const obj = JSON.parse(body);
-    const moviesNumber = obj.results.length;
+    const movies = obj.results;
+    const moviesNumber = movies.length;
     let counter = 0;
+    const regex1 = /people\/18\/$/;
     for (let i = 0; i < moviesNumber; i++) {
-      if (obj.results[i].characters.includes('https://swapi-api.alx-tools.com/api/people/18/')) {
-        counter++;
+      const characters = movies[i].characters;
+      const charactsNum = characters.length;
+      for (let j = 0; j < charactsNum; j++) {
+        const str1 = characters[j];
+        if (regex1.exec(str1) !== null) {
+          counter++;
+        }
       }
     }
     console.log(counter);
